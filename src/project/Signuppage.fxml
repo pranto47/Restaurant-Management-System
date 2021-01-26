@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: darkcyan;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.SignuppageController">
+    <stylesheets>
+        <URL value="@signuppage.css" />
+    </stylesheets>
+   <children>
+      <Hyperlink fx:id="back" alignment="CENTER" layoutX="25.0" layoutY="542.0" onAction="#backtologin" prefHeight="34.0" prefWidth="81.0" text="Back" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <HBox layoutX="112.0" layoutY="227.0" spacing="10.0" />
+      <TextField fx:id="phonenumber" layoutX="192.0" layoutY="215.0" prefHeight="34.0" prefWidth="219.0" style="-fx-background-color: mintcream;" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="167.0" />
+      <TextField fx:id="email" layoutX="192.0" layoutY="302.0" prefHeight="34.0" prefWidth="219.0" style="-fx-background-color: mintcream;" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="167.0" />
+      <Button fx:id="button" layoutX="306.0" layoutY="536.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setregistration" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: steelblue;" text="Registration" textFill="#080f098f">
+         <font>
+            <Font name="Bodoni MT" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="123.0" layoutY="60.0" prefHeight="40.0" prefWidth="112.0" />
+      <Label layoutX="70.0" layoutY="218.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="103.0" text="Phone Number" textFill="WHITE" >
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="145.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="87.0" text="Last Name" textFill="WHITE" >
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="76.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="First Name" textFill="WHITE" >
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="196.0" layoutY="387.0" prefHeight="34.0" prefWidth="219.0" style="-fx-background-color: mintcream;" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="167.0" />
+      <PasswordField fx:id="confirmpassword" layoutX="196.0" layoutY="472.0" prefHeight="34.0" prefWidth="219.0" style="-fx-background-color: mintcream;" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="167.0" />
+      <TextField fx:id="firstname" layoutX="192.0" layoutY="76.0" prefHeight="34.0" prefWidth="219.0" style="-fx-background-color: mintcream;" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="167.0" />
+      <TextField fx:id="lastname" layoutX="192.0" layoutY="145.0" prefHeight="34.0" prefWidth="219.0" style="-fx-background-color: mintcream;" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="167.0" />
+      <Label layoutX="71.0" layoutY="302.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="87.0" text="Email" textFill="WHITE" >
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="387.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="87.0" text="Password" textFill="WHITE" >
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="469.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="117.0" text="Confirm Password" textFill="WHITE" >
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="message" layoutX="192.0" layoutY="20.0" prefHeight="34.0" prefWidth="435.0" />
+   </children>
+</AnchorPane>
