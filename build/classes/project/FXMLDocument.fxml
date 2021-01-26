@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" opacity="0.63" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.FXMLDocumentController">
+   <children>
+      <TextField fx:id="email" layoutX="252.0" layoutY="172.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="343.0" promptText="Enter Your Email" style="-fx-background-color: darkslategrey;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="252.0" layoutY="250.0" prefHeight="32.0" prefWidth="343.0" promptText="Enter Your Password" style="-fx-background-color: darkslategrey;" />
+      <HBox layoutX="252.0" layoutY="326.0" prefHeight="32.0" prefWidth="343.0">
+         <children>
+            <Hyperlink fx:id="forgotpassword" contentDisplay="CENTER" layoutX="129.0" layoutY="333.0" onAction="#setpassword" prefHeight="23.0" prefWidth="199.0" text="Forgot Password?" underline="true" />
+            <Button fx:id="login" layoutX="376.0" layoutY="328.0" lineSpacing="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setlogin" opacity="0.8" prefHeight="32.0" prefWidth="112.0" style="-fx-background-color: darkslategrey;" text="Login" textFill="WHITE" AnchorPane.leftAnchor="376.0" AnchorPane.rightAnchor="128.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Hyperlink fx:id="signup" alignment="TOP_CENTER" layoutX="472.0" layoutY="38.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#opensignuppage" opacity="0.99" prefHeight="32.0" prefWidth="96.0" text="Sign Up" textFill="#c8c8c8" underline="true" visited="true" AnchorPane.leftAnchor="472.0" AnchorPane.rightAnchor="32.0">
+         <font>
+            <Font name="Bodoni MT" size="17.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="message" layoutX="252.0" layoutY="122.0" prefHeight="32.0" prefWidth="343.0" textFill="WHITE" />
+   </children>
+</AnchorPane>
